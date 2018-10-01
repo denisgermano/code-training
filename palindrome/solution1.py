@@ -9,5 +9,5 @@ def is_palindrome(word):
 def can_do_palindrome(word):
     word = word.lower()
     counter = Counter(word)
-    even_caracteres = sum([1 for value in counter.values() if value % 2 == 1])
-    return even_caracteres <= 1
+    odd_characters = sum([1 for value in counter.values() if value % 2 == 1])
+    return odd_characters <= 1
